@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container */
+div {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Form */
+form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Tasks */
+h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+li span {
+  flex: 1;
+}
+
+/* Action buttons inside list */
+li div {
+  display: flex;
+  gap: 6px;
+}
+
+li div button {
+  padding: 5px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  background: #ddd;
+  color: #333;
+}
+
+li div button:hover {
+  background: #bbb;
+}
+
+/* Completed task style */
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
